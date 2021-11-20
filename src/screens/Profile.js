@@ -74,11 +74,6 @@ let WeightOption = {
   unit: 'kilogram',
 }
 
-//Setting Height option, but seems not work. It works like Default(Inch)
-let HeightOption = {
-  unit: 'centimeter'
-}
-
 //Setting steop option
 let StepOption = {
   date: new Date().toISOString(), // optional; default now
@@ -105,19 +100,21 @@ AppleHealthKit.getDateOfBirth(
     //console.log(typeof results.value)
 
     Age=results.age
-    BirthDate=results.value
+    BirthDate=results.value.substring(0,10)
     //return results
   },
 )
 
 //Method to get  Height
-AppleHealthKit.getLatestHeight(HeightOption, (err: string, results: HealthValue) => {
+AppleHealthKit.getLatestHeight(null, (err: string, results: HealthValue) => {
   if (err) {
     console.log('error getting latest height: ', err)
     return
   }
   console.log(results)
-  Height=results.value
+  var InchHeight= parseInt(results.value)
+  var CentHeight = InchHeight * 2.54
+  Height=CentHeight
 })
 
 //Method to get Weight
@@ -179,8 +176,8 @@ const App = () => {
       <Text style={styles.normalTexts}>Sex: {Sex}</Text>
       <Text style={styles.normalTexts}>Age: {Age}</Text>
       <Text style={styles.normalTexts}>BirthDate: {BirthDate}</Text>
-      <Text style={styles.normalTexts}>Height: {Height}</Text>
-      <Text style={styles.normalTexts}>Weight: {Weight}</Text> 
+      <Text style={styles.normalTexts}>Height: {Height}cm</Text>
+      <Text style={styles.normalTexts}>Weight: {Weight}kg</Text> 
       <Text style={styles.normalTexts}>Steps: {Steps}</Text> 
     </View>
   );
