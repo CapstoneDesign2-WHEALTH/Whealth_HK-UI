@@ -79,6 +79,7 @@ let HeightOption = {
   unit: 'centimeter'
 }
 
+//Setting steop option
 let StepOption = {
   date: new Date().toISOString(), // optional; default now
   includeManuallyAdded: false, // optional: default true
@@ -169,13 +170,9 @@ const App = () => {
 
   // NEED TO DEAL WITH : 
   // method call sequence -> Later
-  // data structure store and load -> Works(on half)
-  
-  //console.log(Age)
-  //console.log(Val)
 
 
-  // Show it in screen
+  // Show HealthKit data on screen
   return (  
     <View style={styles.container}>
       <Text style={styles.title}>HealthKit Datas</Text>
