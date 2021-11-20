@@ -79,9 +79,15 @@ let HeightOption = {
   unit: 'centimeter'
 }
 
+let StepOption = {
+  date: new Date().toISOString(), // optional; default now
+  includeManuallyAdded: false, // optional: default true
+}
+
 // Variables for HK datas
-var Age,BirthDate
-var Weight,Height
+let Age,BirthDate
+let Weight,Height
+let Steps,Sex
 
 //Method to get DateOfBirth
 AppleHealthKit.getDateOfBirth(
@@ -122,6 +128,27 @@ AppleHealthKit.getLatestWeight(WeightOption, (err: string, results: HealthValue)
   Weight=results.value
 })
 
+//Method to get sex
+AppleHealthKit.getBiologicalSex(null, (err: Object, results: Object) => {
+  if (err) {
+    return
+  }
+  //console.log(results)
+  Sex=results.value
+})
+
+// Method to get StepCount of today
+AppleHealthKit.getStepCount(
+  (StepOption: HealthInputOptions),
+  (err: Object, results: HealthValue) => {
+    if (err) {
+      return
+    }
+    Steps=results.value
+    //console.log(results)
+  },
+)
+
 
 /*
   Iterate WaterDatas array, and save them using method
@@ -151,11 +178,13 @@ const App = () => {
   // Show it in screen
   return (  
     <View style={styles.container}>
-      <Text style={styles.title}> My First React Native</Text>
+      <Text style={styles.title}>HealthKit Datas</Text>
+      <Text style={styles.normalTexts}>Sex: {Sex}</Text>
       <Text style={styles.normalTexts}>Age: {Age}</Text>
       <Text style={styles.normalTexts}>BirthDate: {BirthDate}</Text>
       <Text style={styles.normalTexts}>Height: {Height}</Text>
       <Text style={styles.normalTexts}>Weight: {Weight}</Text> 
+      <Text style={styles.normalTexts}>Steps: {Steps}</Text> 
     </View>
   );
 
