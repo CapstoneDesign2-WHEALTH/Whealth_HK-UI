@@ -26,8 +26,8 @@ class GradientLineExample extends React.PureComponent {
         <Line
           x1={'0%'}
           x2={'100%'}
-          y1={y(0)}
-          y2={y(0)}
+          y1={y(-200)}
+          y2={y(-200)}
           stroke={Colors.gray}
           strokeDasharray={[4, 8]}
           strokeWidth={1}

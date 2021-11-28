@@ -9,6 +9,7 @@ import waterman from '../../assets/images/waterman.png';
 import loginBg from '../../assets/images/loginBg.png';
 import facebook from '../../assets/images/facebook.png';
 import google from '../../assets/images/google.png';
+
 const Home = ({navigation}) => {
   const navigate = route => navigation.navigate(route);
   return (

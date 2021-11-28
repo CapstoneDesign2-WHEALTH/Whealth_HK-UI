@@ -13,40 +13,16 @@ export default class App extends React.Component {
       activeIndex: 0,
       carouselItems: [
         {
-          title: 'Good',
-          text: '우리 몸의 독소를 제거해 줍니다.',
+          title: 'Bad',
+          text: '물을 한 번에 많이 마시면 소화가 잘 되지 않습니다.',
         },
         {
-          title: 'Good',
-          text: '다이어트에 도움을 줍니다.',
+          title: 'Bad',
+          text: '찬물을 많이 마시면 집중력을 떨어뜨릴 수 있습니다.',
         },
         {
-          title: 'Good',
-          text: '피부가 좋아집니다.',
-        },
-        {
-          title: 'Good',
-          text: '변비 증상을 완화할수 있습니다.',
-        },
-        {
-          title: 'Good',
-          text: '신장 결석을 예방합니다.',
-        },
-        {
-          title: 'Good',
-          text: '부종을 해소하는데 도움을 줍니다.',
-        },
-        {
-          title: 'Good',
-          text: '숙취 해소에 좋습니다.',
-        },
-        {
-          title: 'Good',
-          text: '피로를 감소시킵니다.',
-        },
-        {
-          title: 'Good',
-          text: '운동 효과를 높입니다.',
+          title: 'Bad',
+          text: '땀을 흘린 뒤에 물을 많이 마시면 좋지 않습니다.',
         },
       ],
     };
@@ -59,16 +35,21 @@ export default class App extends React.Component {
         <View
           style={{
             ...styles.bar,
-            backgroundColor: Colors.darkBlue,
+            backgroundColor: '#B933F9',
           }}></View>
         <View
           style={{
             ...styles.bar,
-            backgroundColor: Colors.lightBlue,
+            backgroundColor: '#F3D9FF',
             left: 40,
             zIndex: -1,
           }}></View>
-        <Text style={{...Styles.Text, fontSize: 13, marginTop: 50}}>
+        <Text
+          style={{
+            ...Styles.Text,
+            fontSize: 13,
+            marginTop: 50,
+          }}>
           {item.text}
         </Text>
       </View>
@@ -88,7 +69,7 @@ export default class App extends React.Component {
             renderItem={this._renderItem}
             onSnapToItem={index => this.setState({activeIndex: index})}
             autoplay
-            autoplayInterval={3000}
+            autoplayInterval={4000}
             loop
           />
         </View>
@@ -100,7 +81,6 @@ export default class App extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    // backgroundColor: Colors.bg,
     fontFamily: 'Lato-Bold',
     position: 'relative',
   },
@@ -115,6 +95,8 @@ const styles = StyleSheet.create({
     width: '85%',
     height: '100%',
     padding: 20,
+    // marginLeft: 25,
+    // marginRight: 25,
   },
   bar: {
     position: 'absolute',
