@@ -70,4 +70,18 @@ So you need to do followings:
 
 ## Issue : Non-zero Exit Code
 
+Often, Non-zero Exit Code Error happens. 
+This Happens because of various reasons, so you can carefully check error log of Xcode.
+
+In our case, Non-zero Exit Code happened of followings:
+- Javascript Syntax Error
+- Dependency Error
+- Async Error
+
+There is no specific solution for first error, And we provided solution for second error above.
+
+For third error, it happens because ```InitHealthkit``` happens asynchronously. We need to deal with this after.
+
+
+
 
