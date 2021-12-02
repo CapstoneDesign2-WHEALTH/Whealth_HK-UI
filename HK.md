@@ -16,11 +16,8 @@ Enables getting data from iPhone's Health Apps, including :
 1.First, you need to import libraries :
 
 ```import appleHealthKit from 'react-native-health'```
-
-2.Set options for API's Permission to access Health data
-
-Check for OFFICIAL_DOCUMENT's ```initHealthKit``` page
-
+2.Set options for API's Permission to access Health data.
+check for OFFICIAL_DOCUMENT's ```initHealthKit``` page
 3. After you grant permission options, you can use various methods in OFFICIAL_DOCUMENT. 
 Here are some examples : 
 getDateOfBirth : Getting birth data and age from Health App
