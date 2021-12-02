@@ -22,9 +22,17 @@ Enables getting data from iPhone's Health Apps, including
 Check for OFFICIAL_DOCUMENT's ```initHealthKit``` page
 
 3.After you grant permission options, you can use various methods in OFFICIAL_DOCUMENT. 
+
 Here are some examples : 
-getDateOfBirth : Getting birth data and age from Health App
-getLatestHeight : 
+
+getDateOfBirth : Get birth data and age from Health App.
+
+getLatestHeight : Get height from Health App.
+
+saveWater : Set water info in specific y/m/d in Health App.
+
+With various methods, you can read/write various Health App Data.
+However, don't forget to grant permission in your options!
 
 
 ## Things To Notice.
