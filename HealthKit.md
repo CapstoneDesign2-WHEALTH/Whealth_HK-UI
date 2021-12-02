@@ -82,6 +82,9 @@ There is no specific solution for first error, And we provided solution for seco
 
 For third error, it happens because ```InitHealthkit``` happens asynchronously. We need to deal with this after.
 
+## Build Environment
 
+- With iPhone simulator, ```npm run ios```
+- With iPhone device you have, you can open  ```PROJECT_NAME.xcworkspace```, set running device, and run
 
 
