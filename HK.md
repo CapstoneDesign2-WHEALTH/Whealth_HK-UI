@@ -39,7 +39,7 @@ So you need to do followings:
 - go root folder
 - run ```npm -i```
 - check if ```package-lock.json``` and ```node_modules``` regenerated includes libraries you want to import.
-- if doesn't, there likely be error while installing with terminal. (ex. npm install react-native/DEPENDENCY_NAME)
+- if doesn't, there likely be error while installing with terminal. (ex. ```npm install react-native/DEPENDENCY_NAME```)
 - move to ```ios``` folder
 - run ```pod install``` , ```pod update```
 - check ```PROJECT_NAME.xcworkspace``` generated
