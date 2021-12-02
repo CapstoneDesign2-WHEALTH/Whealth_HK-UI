@@ -33,7 +33,7 @@ Here are some examples :
 
 With various methods, you can read/write various Health App Data.
 
-However, don't forget to grant permission in your options!
+Lastly, don't forget to grant permission in your options!
 
 
 ## Issue About Dependency
