@@ -25,11 +25,11 @@ Check for OFFICIAL_DOCUMENT's ```initHealthKit``` page
 
 Here are some examples : 
 
-- getDateOfBirth : Get birth data and age from Health App.
+- ```getDateOfBirth``` : Get birth data and age from Health App.
 
-- getLatestHeight : Get height from Health App.
+- ```getLatestHeight``` : Get height from Health App.
 
-- saveWater : Set water info in specific y/m/d in Health App.
+- ```saveWater``` : Set water info in specific y/m/d in Health App.
 
 With various methods, you can read/write various Health App Data.
 
