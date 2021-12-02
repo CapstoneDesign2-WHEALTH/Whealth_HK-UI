@@ -36,7 +36,7 @@ With various methods, you can read/write various Health App Data.
 However, don't forget to grant permission in your options!
 
 
-## Things To Notice.
+## Things To Notice
 
 You must check carefull about pods.
 Whenever you add external libraries and dependencies, make sure to deal with pods.
