@@ -9,16 +9,19 @@ For installation, check for https://github.com/agencyenterprise/react-native-hea
 Follow the basic install processes.
 
 ## About The API
-Enables getting data from iPhone's Health Apps, including :
+Enables getting data from iPhone's Health Apps, including 
 - Height, Weight, BMI, Heartrate, workout infos ... etc
 
 ## How To Use
-1.First, you need to import libraries :
+1.First, you need to import libraries 
 
 ```import appleHealthKit from 'react-native-health'```
+
 2.Set options for API's Permission to access Health data.
-check for OFFICIAL_DOCUMENT's ```initHealthKit``` page
-3. After you grant permission options, you can use various methods in OFFICIAL_DOCUMENT. 
+
+Check for OFFICIAL_DOCUMENT's ```initHealthKit``` page
+
+3.After you grant permission options, you can use various methods in OFFICIAL_DOCUMENT. 
 Here are some examples : 
 getDateOfBirth : Getting birth data and age from Health App
 getLatestHeight : 
