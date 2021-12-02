@@ -5,7 +5,7 @@
 Get Health Data from iPhone's Health App. Use those datas for our app.
 
 ## Installation
-For installation, check for https://github.com/agencyenterprise/react-native-health, an OFFICIAL_DOCUMENT.
+For installation, check for https://github.com/agencyenterprise/react-native-health, the OFFICIAL_DOCUMENT.
 
 Follow the basic install processes.
 
