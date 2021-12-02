@@ -36,7 +36,7 @@ With various methods, you can read/write various Health App Data.
 However, don't forget to grant permission in your options!
 
 
-## Things To Notice
+## Issue About Dependency
 
 You must check carefull about pods.
 Whenever you add external libraries and dependencies, make sure to deal with pods.
@@ -66,4 +66,7 @@ So you need to do followings:
 - run ```pod install``` , ```pod update```
 - check ```PROJECT_NAME.xcworkspace``` generated
 - Open the ```PROJECT_NAME.xcworkspace``` and build it.
+
+## Issue About Non-zero Exit Code
+
 
