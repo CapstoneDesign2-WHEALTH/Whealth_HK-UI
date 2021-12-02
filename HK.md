@@ -22,8 +22,8 @@ Whenever you add external libraries and dependencies, make sure to deal with pod
 I strongly recommend you to do following when you change your dependencies:
 - go to ```ios``` folder
 - remove ```Podfile.lock```
-- remove whealth(or your project's name).xcworkspace file
-- in ios folder, run ```pod install``` and ```pod update```
+- remove ```PROJECT_NAME.xcworkspace``` file
+- in ```ios``` folder, run ```pod install``` and ```pod update```
 
 If dependency problem still happens, such like :
 xxxx (dependency name) can't be found in ../xxx (directory foler)
@@ -35,13 +35,13 @@ So you need to do followings:
 - delete the file ```package-lock.json```
 - go to ```ios``` folder
 - remove ```Podfile.lock```
-- remove whealth(or your project's name).xcworkspace file
+- remove ```PROJECT_NAME.xcworkspace```
 - go root folder
 - run ```npm -i```
 - check if ```package-lock.json``` and ```node_modules``` regenerated includes libraries you want to import.
 - if doesn't, there likely be error while installing with terminal. (ex. npm install react-native/DEPENDENCY_NAME)
 - move to ```ios``` folder
 - run ```pod install``` , ```pod update```
-- check PROJECT_NAME.xcworkspace generated
-- Open the .xcworkspace and build it.
+- check ```PROJECT_NAME.xcworkspace``` generated
+- Open the ```PROJECT_NAME.xcworkspace``` and build it.
 
