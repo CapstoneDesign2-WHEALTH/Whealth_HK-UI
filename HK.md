@@ -5,17 +5,24 @@
 Get Health Data from iPhone's Health App. Use those datas for our app.
 
 ## Installation
-For installation, check for https://github.com/agencyenterprise/react-native-health 
+For installation, check for https://github.com/agencyenterprise/react-native-health, an OFFICIAL_DOCUMENT 
 Follow the basic install processes.
 
-## About the API
+## About The API
 Enables getting data from iPhone's Health Apps, including :
 - Height, Weight, BMI, Heartrate, workout infos ... etc
 
-## 
+## How To Use
+1.First, you need to import libraries :
+
+```import appleHealthKit from 'react-native-health'```
+
+2.Set options for API's Permission to access Health data
+Check for OFFICIAL_DOCUMENT's ```initHealthKit``` page.
 
 
-## Things to notice.
+
+## Things To Notice.
 
 You must check carefull about pods.
 Whenever you add external libraries and dependencies, make sure to deal with pods.
