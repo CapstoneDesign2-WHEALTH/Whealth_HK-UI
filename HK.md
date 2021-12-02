@@ -26,7 +26,8 @@ I strongly recommend you to do following when you change your dependencies:
 - in ```ios``` folder, run ```pod install``` and ```pod update```
 
 If dependency problem still happens, such like :
-xxxx (dependency name) can't be found in ../xxx (directory foler)
+
+```dependency_name``` can't be found in ```../directory foler``` 
 then you need to deal with not only Pods, but also node_modules.
 So you need to do followings:
 
